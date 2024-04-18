@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+button{
+  transition: all 0.3s ease 0s;
+}
+
+button:hover{
+  transform: scale(1.09);
+  background-color: rgb(11, 124, 158);
+  color: white;
+  transition: 0.5s;
+}
+
+
+.frmcont{
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: inset -1px 1px 1px rgb(156, 156, 156);
+  width: 540px;
+  height: 330px;
+}
+
+form h1{
+  color: #ffffff;
+  font-size: 35px;
+  margin-bottom: 15px;
+  font-family: monospace;
+}
+
+.logrow{
+  margin-top: 6px;
+  height: 50px;
+  width: 490px;
+  padding: 10px 10px;
+  border: 1px solid #555;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+::placeholder{
+  color: rgb(0, 0, 0);
+}
+
+.loginbutton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.loggbtn{
+  height: 60px;
+  width: 200px;
+  margin-top: 25px;
+  border-radius: 0;
+  background-color: rgba(11, 124, 158, 0.6);
+  color: white;
+  font-size: 20px;
+  transition: all 0.3s ease 0s;
+}
+
+.loggbtn:hover{
+  transform: scale(1.05);
+  background-color: rgb(11, 124, 158);
+  color: white;
+  transition: 0.5s;
+}
+
+::placeholder{
+  color: white;
+}
+
+
+
+.frmcont form p{
+ margin-top: 20px;
+  font-size: 20px;
+}
+
+body{
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient( rgba(41,41,41,0.9),rgba(41,41,41,0.9)),url('../../img/random/signin.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+
+footer{
+    background-color: transparent;
+    margin-top: auto;
+}
+
+.footercontainer{
+    width: 100%;
+    padding: 70px 30px 10px;
+}
+
+.socialicons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialicons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease 0s;
+}
+
+.socialicons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+    background: transparent;
+}
+
+.socialicons a:hover{
+  transform: scale(1.15);
+    background-color: rgb(11, 124, 158);
+    transition: 0.5s;
+}
+
+.socialicons a i:hover{
+    color: white;
+    transition: 0.5s;
+}
+
+.footerbottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    background:rgb(11, 124, 158);
+}
+
+.footerbottom p{
+   color: white;
+   font-family: monospace;
+   font-weight: 400;
+   font-size: 15px;
+   background:rgb(11, 124, 158);
+}
+
+.CC{
+    width: 10px;
+    height: 10px;
+    background: transparent;
+}
+
+
+.cta{
+    display: flex;
+    justify-content: space-between;
+    width: 205px;
+}
+
+.btn1{
+    width: 115px;
+}
+
+/* For 1280x720 resolution */
+@media (max-width: 1350px){
+  
+    
+  header{
+      padding: 20px 10%;
+  }
+  
+  .logo{
+      width: 250px;
+      height: 50px;
+  }
+
+  
+  li, a, button{
+      font-size: 16px;
+  }
+  
+  button{
+      padding: 8px 20px;
+  }
+  
+  
+  .lgo{
+      width: 700px;
+      height: 600px;
+  }
+  
+  
+  .cta{
+      width: 177px;
+  }
+
+  .frmcontainer{
+      top: 48%;
+  }
+  
+  form h1{
+      font-size: 30px;
+  }
+  
+  .frmcont form p{
+    margin-top: 15px;
+     font-size: 15px;
+   }
+  
+  form{
+      padding: 5px 20px;
+      height: 280px;
+      width: 430px;
+  }
+  
+  .logrow{
+      margin-top: 5px;
+      height: 40px;
+      width: 390px;
+      padding: 10px;
+  }
+  
+  .loggbtn{
+    margin-top: 20px;
+    width: 170px;
+    height: 50px;
+    font-size: 15px;
+  }
+
+  
+  
+  ::placeholder{
+      color: white;
+  }
+    
+  }

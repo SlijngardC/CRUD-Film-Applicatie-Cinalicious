@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+   
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color:rgb(11, 124, 158);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  
+
+  ::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+
+
+li, a, button{
+    font-family: monospace;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    z-index: 1000;
+}
+
+header.sticky
+{
+    background: rgb(41, 41, 41,0.7);
+}
+
+html{
+    scroll-behavior: auto;
+}
+
+.logo{
+    width: 250px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.nav__links{
+    list-style: none;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover{
+    transition:0.5s;
+    color: rgb(11, 124, 158);
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: black;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    transition: 0.5s;
+    transform: scale(1.09);
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lgo{
+    width: 700px;
+    height: 600px;
+}
+
+
+.amaa h1{
+    font-family: monospace;
+    color: white;
+    font-size: 40px;
+    margin-left: 90px;
+}
+
+
+
+.bghome{
+    background-image: linear-gradient( rgba(41,41,41,0.9),rgba(41,41,41,0.8)),url('../../img/random/user_homepage.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding-bottom: 50px;
+    padding-top: 20px;
+ 
+}
+
+
+.srch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.schr{
+    border: 5px solid rgb(255, 255, 255);
+    width: 100%;
+    max-width: 700px;
+    display:flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+.schr input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: black;
+}
+
+.schr button{
+    border: 0;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background: rgb(11, 124, 158);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.schr button img{
+    margin-left: -15px;
+    width: 50px;
+}
+
+.drp{
+    height: 40px;
+}
+
+.welcontainer{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.welcontainer h1{
+    font-family: monospace;
+    color: white;
+    font-size: 60px;
+}
+
+.welcontainer P{
+    font-family: monospace;
+    color: white;
+    font-size: 30px;
+
+}
+
+.welcontainer0{
+    margin-top: 40px;
+    margin-bottom: -30px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+
+}
+
+.welcontainer0 h1{
+    font-family: monospace;
+    color: white;
+    font-size: 40px;
+    margin-left: 110px;
+}
+
+.welcontainer0 P{
+    font-family: monospace;
+    color: white;
+    font-size: 30px;
+    margin-left: 110px
+}
+
+.errcon P{
+    font-family: monospace;
+    font-size: 30px;
+    margin-left: 120px;
+    margin-top: 15px;
+}
+
+.schr button:hover{
+    transition: 0.5s;
+    transform: scale(1.09);
+    cursor: pointer;
+    background: rgb(11, 96, 122);
+}
+
+footer{
+    background-color: rgb(41, 41, 41);
+    margin-top: 80px;
+}
+.footercontainer{
+    width: 100%;
+    padding: 70px 30px 10px;
+}
+
+.socialicons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialicons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease 0s;
+}
+
+.socialicons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+    background: transparent;
+}
+
+.socialicons a:hover{
+    transform: scale(1.15);
+    background-color: rgb(11, 124, 158);
+    transition: 0.5s;
+}
+
+.socialicons a i:hover{
+    color: white;
+    transition: 0.5s;
+}
+
+.footerbottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    background:rgb(11, 124, 158);
+}
+
+.footerbottom p{
+   color: white;
+   font-family: monospace;
+   font-weight: 400;
+   font-size: 15px;
+   background:rgb(11, 124, 158);
+}
+
+.CC{
+    width: 10px;
+    height: 10px;
+    background: transparent;
+}
+
+
+body{
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(41, 41, 41);
+}
+
+
+
+.cta{
+    display: flex;
+    justify-content: space-between;
+    width: 215px;
+}
+
+.btn1{
+    width: 115px;
+}
+
+.movie-select {
+    display: inline-block;
+    max-width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 200px; 
+    padding: 10px;  
+    cursor:pointer;
+    margin-left:30px;
+    margin-right:20px;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .movie-select:hover {
+    transition: 0.5s;
+    transform: scale(1.02);
+    background-color: white;
+  }
+
+  /* For 1280x720 resolution */
+@media (max-width: 1350px){
+    header{
+        padding: 20px 10%;
+    }
+    
+    .logo{
+        width: 250px;
+        height: 50px;
+    }
+
+    
+    li, a, button{
+        font-size: 16px;
+    }
+    
+    button{
+        padding: 8px 20px;
+    }
+    
+    
+    .lgo{
+        width: 700px;
+        height: 600px;
+    }
+  
+  .lgo{
+      width: 700px;
+      height: 600px;
+  }
+  
+  
+  .bghome{
+      padding-bottom: 25px;
+      padding-top: 10px;
+  }
+  
+  
+  .schr{
+      max-width: 600px;
+      border-radius: 60px;
+      padding: 10px 20px;
+  }
+  
+  .schr input{
+      padding: 14px 20px;
+  }
+  
+  .schr button{
+      width: 65px;
+      height: 65px;
+      position: absolute;
+      right: 325px;
+  }
+  
+  
+  .drp{
+      height: 40px;
+  }
+  
+  
+  .welcontainer{
+      margin-top: 30px;
+      margin-bottom: 30px;
+      height: 100px;
+      padding: 10px;
+  }
+  
+  .welcontainer h1{
+      font-size: 50px;
+  }
+  
+  .welcontainer P{
+      font-size: 30px;
+  }
+  
+  
+  .amaa h1{
+      font-size: 30px;
+  }
+  
+  
+  .movie-select {
+    max-width: 190px;
+    padding: 8px; 
+    margin-bottom: 10px; 
+  }
+  
+  .lgo{
+    width: 600px;
+    height: 500px;
+  }
+  
+  .hompos{
+    height: 230px; 
+    width: 190px;
+  }
+      
+    }
+   
